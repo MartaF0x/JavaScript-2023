@@ -1,23 +1,31 @@
 //- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+document.write(`<div>`);
 for (let i = 0; i < 10; i++) {
     document.write(`<div>user info</div>`)
 }
+document.write(`</div>`);
 //- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+document.write(`<div>`);
 for (let i = 0; i < 10; i++) {
     document.write(`<div>${i} - user info</div>`)
 }
+document.write(`</div>`);
 //- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+document.write(`<div>`);
 let i = 0;
 while (i < 20){
     document.write(`<h1>Any title</h1>`)
     i += 1;
 }
+document.write(`</div>`);
 //- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+document.write(`<div>`);
 i = 0;
 while (i < 20){
     document.write(`<h1>${i} - Any title</h1>`)
     i += 1;
 }
+document.write(`</div>`);
 //- Використовуючи данні з масиву, за допомоги document.write та циклу
 //побудувати структуру по шаблону
 //Масив:
@@ -35,9 +43,11 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 //    -->
 //</ul>
 //замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+document.write(`<ul>`);
 for (const listOfItem of listOfItems) {
     document.write(`<li>${listOfItem}</li>`);
 }
+document.write(`</ul>`);
 //-----------------------------------------------
 
 /*Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -75,13 +85,14 @@ for (const listOfItem of listOfItems) {
 </div>
 Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
 */
+document.write(`<div>`);
 for (const product of products) {
     document.write(`<div class="product-card">
                         <h3 class="product-title">${product.title}. Price - ${product.price}</h3>
                         <img src="${product.image}" alt="" class="product-image">
                     </div>`)
 }
-
+document.write(`</div>`);
 //--------------------
 //є масив
 let users = [
@@ -99,7 +110,7 @@ let users = [
 ];
 // за допомоги циклу вивести:
 // - користувачів зі статусом true
-document.write(`<h4>Users with status true</h4>`);
+document.write(`<div><h4>Users with status true</h4>`);
 for (let j = 0; j < users.length; j++) {
 	const user = users[j];
 	if (user.status){
@@ -122,3 +133,4 @@ for (let j = 0; j < users.length; j++) {
         document.write(`${user.name}` + " ")
     }
 }
+document.write(`</div>`);
