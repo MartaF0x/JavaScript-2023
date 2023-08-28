@@ -138,9 +138,9 @@ console.log(sum(numbers));
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 let swapNumb = [11,22,33,44];
 function swap(arr,index1,index2){
-    let x = arr[index1];
-    arr[index1] = arr[index2];
-    arr[index2] = x;
+    arr[index1] += arr[index2];
+    arr[index2] = arr[index1] - arr[index2];
+    arr[index1] = arr[index1] - arr[index2];
     return arr;
 }
 console.log(swap(swapNumb,0,1));
