@@ -20,7 +20,7 @@ str3 = str3.toLowerCase();
 //
 let str = ' dirty string   ';
 str = str.split(' ').filter(x => x).join(' ');
-console.log(str.length);
+console.log(str);
 
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
@@ -131,7 +131,7 @@ let deckOfCards = [
     {suit: 'heart', values: 'ace', color: 'red'}
 ];
 // - знайти піковий туз
-console.log(deckOfCards.filter(card => card.suit == 'spade' && card.values == 'ace'));
+console.log(deckOfCards.find(card => card.suit =='spade'&&card.values=='ace'));
 // - всі шістки
 console.log(deckOfCards.filter(card => card.values == '6'));
 // - всі червоні карти
