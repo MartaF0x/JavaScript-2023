@@ -24,13 +24,11 @@ console.log(users)
 
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 //
-let usersEvenId = users.filter(user => +user.id % 2 == 0);
+let usersEvenId = users.filter(user => !(user.id % 2));
 console.log(usersEvenId);
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 //
-let usersSortById = users.sort((u1, u2) => {
-    return u1.id - u2.id
-});
+let usersSortById = users.sort((u1, u2) => u1.id - u2.id);
 console.log(usersSortById);
 
 // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
