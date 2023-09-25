@@ -1,0 +1,34 @@
+#reloadCalc{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #496067;
+    background-color: lightblue;
+}
+#wrapper{
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+#locations{
+    width: 30vw;
+}
+#locations div{
+    text-align: center;
+    border: 1px solid #496067;
+    margin: 10px 0 0 0;
+}
+#locations div p{
+   margin: 0 0 0 10px;
+}
+#locations div h3{
+    margin: 10px 0 0 0;
+}
