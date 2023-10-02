@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-size: calc(10px + 0.4vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    line-height: 4vh;
+}
+
+ul ul {
+    list-style-type: none;
+}
+
+ul span {
+    margin-right: 1vw;
+    color: #0e6a86;
+}
+
+button {
+    width: 100%;
+    font-size: calc(10px + 0.4vw);
+    background-color: #d3eeee;
+    border: 1px solid #adc2c2;
+    border-radius: 5px;
+}
+
+button:hover {
+    height: 5vh;
+}
+section{
+    flex-direction: column;
+}
+main, section {
+    width: 90vw;
+    background-color: #f3f2f2;
+}
+
+main, main>div, section, section div div {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+main div, section div div {
+    background-color: #faf8f8;
+}
